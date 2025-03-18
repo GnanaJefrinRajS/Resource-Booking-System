@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Slot</title>
+    <link rel="stylesheet" href="bookSlot.css">
+</head>
+
+<body>
+    <div class="book-slot">
+        <div class="header">
+            <h1>BOOK SLOT</h1>
+            <div class="nav-links">
+                <a href="Dashboard.html">DASHBOARD</a>
+                <a href="D:\Academic Lab Subjects\Full Stack Project\venue.html">VENUE DETAILS</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="form-container">
+                <h2>BOOK A SLOT</h2>
+                <form id="slotForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="rollNo">Roll No:</label>
+                    <input type="text" id="rollNo" name="rollNo" placeholder="Enter your roll number" required>
+
+                    <label for="venue">Venue:</label>
+                    <select id="venue" name="venue" required>
+                        <option value="" disabled selected>Select a venue</option>
+                        <option value="ARVR Lab">ARVR Lab</option>
+                        <option value="Embedded Systems Lab">Embedded Systems Lab</option>
+                        <option value="Drone Lab">Drone Lab</option>
+                        <option value="AI Research Lab">AI Research Lab</option>
+                        <option value="Robotics Lab">Robotics Lab</option>
+                    </select>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <button type="submit">BOOK</button>
+                </form>
+            </div>
+            <div class="confirmation">
+                <h2>CONFIRMATION</h2>
+                <p id="confirmationMessage">Your booking details will appear here after submission.</p>
+            </div>
+        </div>
+    </div>
+    <script src="bookSlot.js"></script>
+</body>
+
+</html>

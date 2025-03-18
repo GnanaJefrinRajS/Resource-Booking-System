@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.venue-page {
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #4a90e2;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.content {
+    display: flex;
+    gap: 5%;
+}
+
+.venue-image {
+    width: 45%;
+    position: relative;
+}
+
+.venue-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.venue-details {
+    position: relative;
+    padding: 20px;
+}
+
+.details-table-container {
+    position: absolute;
+    bottom: -20px; /* Position it initially near the bottom of the venue-details section */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.details-table-container.expanded {
+    bottom: 10%; /* Expand upward to take the center of the venue-details */
+    width: 90%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.details-table {
+    text-align: center;
+    overflow: hidden;
+}
+
+.details-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.details-table i {
+    margin-right: 8px;
+    color: #007bff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check credentials
+            if (username === "cd113" && password === "student") {
+                window.location.href = "D:/Academic Lab Subjects/Full Stack Project/DashBoard.html";
+            } else if (username === "admin" && password === "bit") {
+                window.location.href = "D:/Academic Lab Subjects/Full Stack Project/admin.html";
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="D:/Academic Lab Subjects/Full Stack Project/logo.png" alt="Logo">
+        </div>
+        <h2>Login</h2>
+        <form onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="auth-button">
+            <button onclick="location.href='D:/Academic Lab Subjects/Full Stack Project/DashBoard.html'">
+                <img src="D:/Academic Lab Subjects/Full Stack Project/google.jpg" alt="Google Logo"> Sign In With Google
+            </button>
+        </div>
+        <div class="register-link">
+            <a href="D:/Academic Lab Subjects/Full Stack Project/Register.html">New user? Register here</a>
+        </div>
+    </div>
+</body>
+
+</html>

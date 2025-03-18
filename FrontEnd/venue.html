@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Details</title>
+    <link rel="stylesheet" href="venue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="venue-page">
+        <div class="header">
+            <h1>VENUES</h1>
+            <div class="nav-links">
+                <a href="D:/Academic Lab Subjects/Full Stack Project/DashBoard.html">DASHBORAD</a>
+                <a href="D:/Academic Lab Subjects/Full Stack Project/bookSlot.html">BOOK SLOT</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="venue-image">
+                <img id="venue-img" src="D:/Academic Lab Subjects/Full Stack Project/arvrLab.jpg" alt="Venue Image">
+                <div class="navigation-buttons">
+                    <button id="prev-btn">&#10094;</button>
+                    <button id="next-btn">&#10095;</button>
+                </div>
+            </div>
+            <div class="venue-details" id="venue-details">
+                <h2 id="venue-name">Venue Name</h2>
+                <p id="venue-description">Description of the venue...</p>
+                <div class="details-table-container" id="details-table-container">
+                    <div class="details-table" id="details-table">
+                        <table>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i> Location:</td>
+                                <td id="venue-location">Location</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-desktop"></i> Systems:</td>
+                                <td id="venue-systems">0</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-chair"></i> Seats:</td>
+                                <td id="venue-seats">0</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-user"></i> Incharge:</td>
+                                <td id="venue-incharge">Incharge Name</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-phone"></i> Phone:</td>
+                                <td id="venue-phone">Phone Number</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-info-circle"></i> Status:</td>
+                                <td id="venue-status">Status</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="venue.js"></script>
+</body>
+
+</html>

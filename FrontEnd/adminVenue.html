@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminVenue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <span class="header-title">Admin Dashboard</span>
+    </div>
+
+    <!-- Sliding Menu -->
+    <div class="slider-menu" id="sliderMenu">
+        <ul>
+            <li><a href="D:\Academic Lab Subjects\Full Stack Project\admin.html" onclick="closeMenu()">Booking Approval</a></li>
+            <li><a href="#" onclick="closeMenu()">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Venue Name</th>
+                        <th>Venue Status</th>
+                        <th>Location</th>
+                        <th>Floor</th>
+                        <th>Capacity</th>
+                        <th>System Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SF Seminar Hall-1</td>
+                        <td>Available</td>
+                        <td>Sun Flower Block</td>
+                        <td>Basement</td>
+                        <td>300</td>
+                        <td>Projector, Wi-Fi,AC</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SF Seminar Hall-2</td>
+                        <td>Booked</td>
+                        <td>Sun Flower Block</td>
+                        <td>Basement</td>
+                        <td>250</td>
+                        <td>Projector, Wi-Fi, AC</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SF Seminar Hall-3</td>
+                        <td>Under Maintenance</td>
+                        <td>Sun Flower Block</td>
+                        <td>Second Floor</td>
+                        <td>200</td>
+                        <td>Projector, Wi-Fi, AC</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vedanayagam Auditorium</td>
+                        <td>Available</td>
+                        <td>Western Wing</td>
+                        <td>First Floor</td>
+                        <td>800</td>
+                        <td>Projector, AC, Sound System</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Main Auditorium</td>
+                        <td>Available</td>
+                        <td>Center</td>
+                        <td>Ground Floor</td>
+                        <td>1000</td>
+                        <td>Projector, AC, Sound System, Wi-Fi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <script src="adminVenue.js"></script>
+</body>
+
+</html>

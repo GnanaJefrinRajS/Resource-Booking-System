@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <span class="header-title">ADMIN</span>
+    </div>
+
+    <!-- Sliding Menu -->
+    <div class="slider-menu" id="sliderMenu">
+        <ul>
+            <li><a href="D:\Academic Lab Subjects\Full Stack Project\adminVenue.html" onclick="closeMenu()">Venue Details</a></li>
+            <li><a href="#" onclick="closeMenu()">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Venue</th>
+                        <th>User</th>
+                        <th>Confirmation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>726</td>
+                        <td>SF Seminar Hall-1</td>
+                        <td>Balaji S</td>
+                        <td>
+                            <span class="confirm-btn">&#10004;</span> /
+                            <span class="cancel-btn">&#10006;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>727</td>
+                        <td>SF Seminar Hall-2</td>
+                        <td>Parthiban S</td>
+                        <td>
+                            <span class="confirm-btn">&#10004;</span> /
+                            <span class="cancel-btn">&#10006;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
